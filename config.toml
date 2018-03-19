@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://damu.netlify.com/"
 languageCode = "en-us"
 title = "Damu's Blog"
 theme = "hugo-lithium-theme"

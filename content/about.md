@@ -3,7 +3,6 @@ title: "About"
 date: "2018-03-19"
 ---
 
-Call me dAmu (written as ദാമു in മലയാളം )
+I am [**dAmu**](http://mylanguages.org/malayalam_phonetic_keyboard.php) (written ദാമു in മലയാളം). 
 
-
-This website was built using the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium-theme). I started from the guide made by [**Jon Harmon**](http://jonthegeek.com/2018/02/27/blogging-in-ten-minutes/) to create this website
+This is my n<sup>th</sup> attempt at a website. It was built using the [**blogdown**](https://github.com/rstudio/blogdown) package. I started from the guide made by [**Jon Harmon**](http://jonthegeek.com/2018/02/27/blogging-in-ten-minutes/). The theme was modified by [Yihui Xie](https://github.com/yihui/hugo-lithium-theme) after forking from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme)

@@ -1,6 +1,6 @@
 baseurl = "https://damu.netlify.com/"
 languageCode = "en-us"
-title = "Damu's Blog"
+title = "Damu's Corner"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
@@ -15,12 +15,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "Blogs"
     url = "/blogs"
-[[menu.main]]
-    name = "Stats"
-    url = "/stats"
-[[menu.main]]
-    name = "STA"
-    url = "/sta"
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/dtrik"

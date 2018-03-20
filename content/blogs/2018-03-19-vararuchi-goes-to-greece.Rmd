@@ -2,7 +2,7 @@
 title: Vararuchi Goes to Greece
 author: damu
 date: '2018-03-19'
-slug: vararuchi in greece
+slug: vararuchi-goes-to-greece
 categories:
   - Blogs
 tags:

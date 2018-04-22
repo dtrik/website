@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Damu&#39;s Corner</title>
-    <link>/blogs/</link>
-    <description>Recent content in Blogs on Damu&#39;s Corner</description>
+    <title>Short Stories on Damu&#39;s Corner</title>
+    <link>/tags/short-stories/</link>
+    <description>Recent content in Short Stories on Damu&#39;s Corner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blogs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/short-stories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,18 +19,6 @@
       <guid>/blogs/the-clerk/</guid>
       <description>A small desk in the darkest corner of the building. That is what he was worth to the office. A lowly clerk in his division, few people even knew he existed. His job was to proofread documents that were submitted to his office before it could be passed up the chain to the people who actually mattered.
 He was done with another day of drudgery. His in-box had been full and he had to comb through the entire stack to identify something worthwhile.</description>
-    </item>
-    
-    <item>
-      <title>Vararuchi Goes to Greece</title>
-      <link>/blogs/vararuchi-goes-to-greece/</link>
-      <pubDate>Mon, 19 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/blogs/vararuchi-goes-to-greece/</guid>
-      <description>Spend your adolescence slaving for that extra something that separates you from the rest of the herd, not knowing why.
-Impress someone who was you five years ago to get paid to do something that you don’t like and no one cares about.
-Stand in queues to get loans to buy possessions that you don’t need, trying to forget that the bank owns it now.
-Yearn for companionship, trying to find someone who might help you understand why you are doing what you are doing.</description>
     </item>
     
   </channel>

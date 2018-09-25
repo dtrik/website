@@ -3,18 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2018/09/25/100-days-of-ml-code/</loc>
+    <loc>/blogs/100-days-of-ml-code/</loc>
     <lastmod>2018-09-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/04/23/temp/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/04/23/temp/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -46,13 +36,13 @@
   
   <url>
     <loc>/blogs/</loc>
-    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/blogs/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -87,20 +77,8 @@
   </url>
   
   <url>
-    <loc>/tags/novella/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/short-stories/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

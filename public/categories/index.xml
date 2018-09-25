@@ -6,15 +6,24 @@
     <description>Recent content in Categories on Damu&#39;s Corner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>100daysofmlcode</title>
+      <link>/categories/100daysofmlcode/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/100daysofmlcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Blogs</title>
       <link>/categories/blogs/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/blogs/</guid>
       <description></description>

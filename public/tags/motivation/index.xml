@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Motivation on Damu&#39;s Corner</title>
+    <link>/tags/motivation/</link>
+    <description>Recent content in Motivation on Damu&#39;s Corner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/motivation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>100 Days of ML Code</title>
+      <link>/2018/09/25/100-days-of-ml-code/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/09/25/100-days-of-ml-code/</guid>
+      <description>I saw this trending topic on Twitter and was momentarily inspired. I am creating this post so that I can catalogue whether I am able to channel this motivation into something good.
+Earlier in the month, I had made an accidental 1 year subscription on Datacamp due to a misunderstanding regarding the verification before paying process on the website. The mistake was mostly mine as I had forgotten that unlike Indian online payment portals, American (maybe everywhere else as well?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Damu&#39;s Corner</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Damu&#39;s Corner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>100 Days of ML Code</title>
+      <link>/2018/09/25/100-days-of-ml-code/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/09/25/100-days-of-ml-code/</guid>
+      <description>I saw this trending topic on Twitter and was momentarily inspired. I am creating this post so that I can catalogue whether I am able to channel this motivation into something good.
+Earlier in the month, I had made an accidental 1 year subscription on Datacamp due to a misunderstanding regarding the verification before paying process on the website. The mistake was mostly mine as I had forgotten that unlike Indian online payment portals, American (maybe everywhere else as well?</description>
+    </item>
+    
+    <item>
+      <title>temp</title>
+      <link>/2018/04/23/temp/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/04/23/temp/</guid>
+      <description>There is a famous story you might have heard in which a meddling god meets his end at the hands of a forest dweller who mistakes his feet for a bird and shoots it, leading to the god bleeding out. This culminates in the end of not just the god, but his dynasty and the age of gods. Magic ends and society goes through several millennia before it reaches the highs of the past.</description>
+    </item>
+    
+    <item>
+      <title>temp</title>
+      <link>/2018/04/23/temp/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/04/23/temp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

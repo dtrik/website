@@ -22,6 +22,7 @@ jobs:
         run: tiddlywiki ./ --rendertiddler $:/core/templates/static.template.html static.html text/plain
       - name: Build css
         run: tiddlywiki ./ --rendertiddler $:/core/templates/static.template.css static/static.css text/plain        - name: Show created files
+      - name: View files
         run: tree ./
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4

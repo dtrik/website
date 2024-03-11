@@ -17,7 +17,7 @@ jobs:
       - name: Install TiddlyWiki
         run: npm install -g tiddlywiki
       - name: Build tiddlers
-        run: tiddlywiki ./ --rendertiddlers '[tag[short]]' $:/core/templates/static.tiddler.html static text/plain
+        run: tiddlywiki ./ --rendertiddlers '[!is[system]]' $:/core/templates/static.tiddler.html static text/plain
       - name: Build template
         run: tiddlywiki ./ --rendertiddler $:/core/templates/static.template.html static.html text/plain
       - name: Build css

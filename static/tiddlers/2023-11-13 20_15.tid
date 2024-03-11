@@ -1,8 +1,0 @@
-created: 20231113144519924
-creator: damu
-modified: 20231113144627791
-modifier: damu
-tags: short
-title: 2023-11-13 20:15
-
-While saving from phone is convenient, I had managed to mess up a series of commits by deleting the previous commit. Finally fixed it all by sequentially doing git revert and merging the texts. It was very tedious since I am a beginner at git. 

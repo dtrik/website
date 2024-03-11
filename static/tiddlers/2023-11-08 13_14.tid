@@ -1,8 +1,0 @@
-created: 20231108074420070
-creator: damu
-modified: 20231108074508379
-modifier: damu
-tags: short
-title: 2023-11-08 13:14
-
-Wasted more than an hour debugging an issue in a makefile and turns out it was extra spaces at the end of a variable assignment. Very nice. 

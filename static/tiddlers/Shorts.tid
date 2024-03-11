@@ -1,9 +1,0 @@
-created: 20230423093054266
-creator: damu
-modified: 20230429120329624
-modifier: damu
-tags: TableOfContents
-title: Shorts
-
-<<more "[tag[short]!sort[title]]"
-template:"more-transclude" size:5>>

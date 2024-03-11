@@ -1,8 +1,0 @@
-created: 20201011024535600
-modified: 20201011040452600
-revision: 1
-tags: k8s
-title: Kubernetes
-type: text/vnd.tiddlywiki
-
-Kubernetes is a system for managing [[containerized applications|Containerization]] across multiple hosts ^^[[1|https://github.com/kubernetes/kubernetes/#kubernetes]]^^. It is a Greek word meaning "helmsman" or "pilot". It is also the root of the word cybernetics. 

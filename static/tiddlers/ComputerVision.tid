@@ -1,9 +1,0 @@
-created: 20191126173505260
-modified: 20191212181507172
-revision: 2
-tags: Learn ML DL
-title: ComputerVision
-type: text/vnd.tiddlywiki
-
-This is a category of machine/deep learning where computers try to mimic the effect of vision, for eg, to detect characters.
-<<list-links "[tag[ComputerVision]]">>

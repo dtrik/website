@@ -1,8 +1,0 @@
-created: 20201012172857500
-modified: 20201012173752400
-revision: 1
-tags: test
-title: Testing
-type: text/vnd.tiddlywiki
-
-I am copying out a [[post|https://medium.com/@copyconstruct/testing-microservices-the-sane-way-9bb31d158c16]] on testing microservices from [[Cindy Sridharan|https://twitter.com/copyconstruct]] to understand it well. This posts primarily focuses on pre-production testing in the context of microservices. After this step, I want to be able to summarise it and pick out a few key points. 

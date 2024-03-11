@@ -1,0 +1,40 @@
+created: 20201128163936400
+modified: 20201129053913400
+revision: 2
+tags: ssd
+title: Current Flow
+type: text/vnd.tiddlywiki
+
+To understand current flow in transistors, we need to start with energy diagrams. The source is filled with electrons. Electrons try to move to the lowest possible energy level but due to exclusion, only one electron can occupy a level. This leads to the source having many energy levels with electrons upto a level $$\mu_1$$ which is the electrochemical potential of the source. The drain also has a similar structure with its own electrochemical potential $$\mu_2$$ but it is also lowered by the voltage V applied to the drain. Thus it is at $$\mu_2 - qV$$.
+
+Now at the source, it sees a potential difference and it tries to neutralize this by pushing electrons into the channel. At the other end, the drain is at a lowered energy level, it tries to neutralize this by taking electrons from the channel. This leads to current flow. We derive the formula for the conductance later and we get: 
+
+$$G = \frac{q^2D}{2t}$$
+
+Here D is the density of states near the Fermi level and t is the transfer time.
+
+To derive the Drude formula, we start with Newtonian mechanics. 
+
+$$m\frac{dv_d}{dt} = qF - m\frac{v_d}{\tau} $$
+
+Here on the LHS is the force defined as $$ma$$ with $$v_d$$ being the drift velocity and on the RHS, we have F as the electric field and $$m\frac{v_d}{\tau}$$ is the viscous force due to the material. At steady state, LHS is zero, therefore we have 
+
+$$v_d = \frac{q\tau}{m}F $$
+
+$$\frac{q\tau}{m}$$ is considered the mobility.
+
+The current,
+
+$$I = Aqnvd = A\frac{q^2n\tau}{m}F $$
+
+$$F = \frac{V}{L}$$ and therefore we get the Drude formula.
+
+But in this formalism starting with the notion of electric field, it is not clear why all electrons in the contact don't move across the channel. It is known that only electrons around the Fermi level contribute to the current. It works around this with the concept of free electrons which only exist in the conduction band. Filled bands do not conduct.
+
+Describing current flow in terms of electron flow around the Fermi level leads to both the ballistic and diffusive conductance. The more general diffusive conductance is defined as: 
+
+$$G = \frac{q^2 D \bar{D}}{AL} $$
+
+Here $$\bar{D}$$ is the diffusion coefficient.
+
+Deriving this formula requires advanced formalisms such as the Boltzmann formalism but in our picture, it naturally comes up. This will be done in a later lecture.

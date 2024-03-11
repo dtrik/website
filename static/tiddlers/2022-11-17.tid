@@ -1,0 +1,9 @@
+created: 20230429141200803
+creator: damu
+modified: 20230429141257813
+modifier: damu
+tags: til
+title: 2022-11-17
+
+Export different subheadings to different files:
+Go to a section and do C-c C-e C-s h h. Usual export does not have the C-s.

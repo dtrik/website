@@ -1,0 +1,20 @@
+created: 20200204033523200
+modified: 20200213035355000
+revision: 2
+tags: install
+title: Install Emacs in Ubuntu
+type: text/vnd.tiddlywiki
+
+The Emacs available in the Ubuntu repository is Emacs 25.2. To install Emacs 26:
+
+```
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt update
+sudo apt install emacs26
+```
+To remove the above installation
+
+```
+sudo apt remove --autoremove emacs26 emacs26-nox
+```
+

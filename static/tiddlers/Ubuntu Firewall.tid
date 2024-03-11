@@ -1,0 +1,16 @@
+created: 20200203185825200
+modified: 20200212195826500
+revision: 2
+tags: Linux
+title: Ubuntu Firewall
+type: text/vnd.tiddlywiki
+
+To enable Ubuntu firewall:
+
+```
+sudo ufw status
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw enable
+
+```

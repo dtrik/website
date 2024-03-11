@@ -1,0 +1,13 @@
+created: 20191104190933101
+modified: 20201021172843900
+revision: 2
+tags: pkm
+title: Personal Knowledge Management
+type: text/vnd.tiddlywiki
+
+It is easy to lose track of what you are thinking in this hectic world. Fortunately there are many systems for knowledge management. 
+How to efficiently search knowledge:
+
+* [[emacsripgrep|https://beepb00p.xyz/pkm-search.html]]
+* [[orger|https://beepb00p.xyz/orger.html]]
+* Grasp is another tool built by the above person which is very interesting. It is a python server that adds selected parts of a webpage into orgmode. You can add notes/tags to the 'grasp'ed part. 

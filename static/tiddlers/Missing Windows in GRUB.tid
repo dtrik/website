@@ -1,0 +1,21 @@
+created: 20200203185111000
+modified: 20200212195826500
+revision: 2
+tags: Linux
+title: Missing Windows in GRUB
+type: text/vnd.tiddlywiki
+
+After installing Ubuntu, my Windows OS was missing from the GRUB. I fixed it using os-prober and then updating the GRUB.
+
+```
+#install os-prober, was already installed in my Ubuntu system
+#sudo apt-get install os-prober
+```
+Then:
+
+```
+sudo os-prober 
+sudo update-grub
+reboot
+```
+

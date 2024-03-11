@@ -1,0 +1,40 @@
+created: 20151203215640514
+creator: damu
+modified: 20230429120659242
+modifier: damu
+tags: $:/tags/Macro
+title: TiddlyTools/Macros/more
+
+\define more-text()       <div><$text text=<<currentTiddler>>/></div>
+\define more-link()       <div><$link/></div>
+\define more-comma()      <$link/><$list filter="[<currentTiddler>!match<last>]">, </$list>
+\define more-bullet()     <li><$link/></li>
+\define more-transclude() <$link/><blockquote><$transclude field="text"/></blockquote>
+
+\define more-body(list,level:"+")
+<$let pid=<<qualify "$(id)$/$level$">>>
+<$list filter="[enlist<__list__>limit<size>]"><<$(template)$>>{{||$(template)$}}</$list>
+<$set name="rest" filter="[enlist<__list__>rest<__size__>]">
+<$list filter="[<rest>!match[]]">
+<$list filter="[<pid>is[missing]]">
+   <$button class="tc-btn-invisible" set=<<pid>> setTo="show" tooltip="show next $(size)$ items">
+      +<$count filter=<<rest>>/> more{{$:/core/images/right-arrow}}
+   </$button>
+</$list>
+<$list filter="[<pid>is[tiddler]]">
+   <$button class="tc-btn-invisible" tooltip="hide additional items">
+      {{$:/core/images/left-arrow}}less
+      <$action-deletetiddler $filter="[prefix[$(id)$/$level$]suffix<qualify>]"/>
+   </$button>
+   <$macrocall $name="more-body" list=<<rest>> level="$level$+"/>
+</$list>
+\end
+
+\define more(filter,size:"10",template,id:"0")
+<$set name="list" filter="[subfilter<__filter__>] -[prefix[$:/state/popup/more/]]">
+<$let template={{{ [<__template__>has[title]] ~[<__template__>is[variable]] ~[[more-bullet]] }}}
+   id="$:/state/popup/more/$id$" size=<<__size__>> last={{{ [enlist<list>last[]] }}}>
+<$macrocall $name="more-body" list=<<list>>/>
+\end
+
+{{TiddlyTools/Macros/more/Info}}

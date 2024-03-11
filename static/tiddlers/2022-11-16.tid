@@ -1,0 +1,26 @@
+created: 20230429140444621
+creator: damu
+modified: 20230429141115214
+modifier: damu
+tags: til
+title: 2022-11-16
+
+Set remote URL for git:
+
+```
+git remote set-url origin git@github.com:gitusername/repository.git
+```
+
+Show the remote URL settings in git:
+
+```
+git remote -v
+```
+
+Switch to SSH based git push:
+
+Ensure that repository is configured for SSH, then:
+
+```
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+```

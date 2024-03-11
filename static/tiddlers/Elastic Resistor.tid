@@ -1,0 +1,14 @@
+created: 20201128170327000
+modified: 20201129053814500
+revision: 2
+tags: ssd
+title: Elastic Resistor
+type: text/vnd.tiddlywiki
+
+When electrons travel from one contact to another, there is heat dissipation. It is observed that in case of small devices, where ballistic transport comes into picture, most of the heat is dissipated at the contacts.
+
+Usually, electron motion is a mix of thermodynamics and mechanics. Mechanics is dominated by force driven actions while thermodynamics is dominated by entropy driven actions. To describe electron flow it usually requires combining semi-classical mechanics and entropy driven actions using the Boltzmann Transport Equation. In case of quantum mechanics, it requires combining the Schrodinger equation and entropy driven actions using the Non-equilibrium Green's Function. 
+
+But in case of elastic resistors, this forms almost a clearly separated action, with the thermodynamic forces at the contacts and the mechanical forces dominating at the channel. Thus understanding electron flow is comparatively easier. This can be used for both ballistic and diffusive transport.
+
+In case of big devices, they are modeled as a series of small elastic resistors. So the electron moves elastically from one point to the next, loses some energy, elastically again and so on. Elastic transport means the electron does not lose any energy to the lattice. So even with a diffusive motion, it can be elastic. Ballistic on the other hand means it does lose momentum. The results at low bias match exactly with the Boltzmann formalism. At high bias, we still get a good enough approximation.

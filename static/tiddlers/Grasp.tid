@@ -1,0 +1,11 @@
+created: 20230421033148318
+creator: root
+modified: 20230421033254436
+modifier: root
+revision: 1
+tags: Bookmarks
+title: Grasp
+type: text/vnd.tiddlywiki
+
+A Python server that can capture details about the selected text and where on the web it is, useful for maintaining quotes/bookmarks with reference to source. 
+https://github.com/karlicoss/grasp

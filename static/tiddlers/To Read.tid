@@ -1,0 +1,21 @@
+created: 20201018173920400
+modified: 20201022034147500
+revision: 2
+tags: Bookmarks
+title: To Read
+type: text/vnd.tiddlywiki
+
+List of articles/books to read or being read. The tiddlers will have a link to a summary. 
+<$list filter="[!has[draft.of]tag[ToRead]!tag[done]sort[created]]">
+
+<$checkbox tag="done"> <$link/></$checkbox>
+
+</$list>
+
+! Completed tasks
+
+<$list filter="[!has[draft.of]tag[ToRead]tag[done]sort[created]]">
+
+<$checkbox tag="done"> ~~<$link/>~~</$checkbox>
+
+</$list>

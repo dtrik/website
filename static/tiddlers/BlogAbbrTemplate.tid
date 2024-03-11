@@ -1,0 +1,8 @@
+created: 20230429113040804
+creator: damu
+modified: 20230429121000107
+modifier: damu
+tags: 
+title: BlogAbbrTemplate
+
+<$link/><blockquote><$transclude field="teaser"/></blockquote>

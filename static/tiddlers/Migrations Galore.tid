@@ -1,0 +1,14 @@
+created: 20230422123323179
+creator: damu
+date: 2023-04-22
+modified: 20230429113532954
+modifier: damu
+tags: blogpost
+teaser: About relentless website migrations
+title: Migrations Galore
+
+Within less than a week, I have discarded most of my [[pretentions|NotAWebDeveloper]] and moved almost everything over to TiddlyWiki. I have been an on and off user of TiddlyWiki for a long time but somehow always ignored it as a main site material due to how rather complicated it is to understand the underlying features. The good thing though is that the webpage will still most likely be [ext[working|https://tiddlywiki.com/#Future%20Proof]] when I am old and grey. Maybe I can look into this JavaScript nonsense when I am retired. 
+
+So I have copied over almost all my posts here. There are still some things left over scattered elsewhere but that will be an ongoing task now that the main stuff is done. I have simplified everything so that my overhead will be minimum. There is a git repo on GitHub where this html page lives and that too mainly because I want to use the save feature. I am deploying it as a GitHub page on a custom domain that I will shortly change to my apex domain (damu.page) or www.damu.page. 
+
+'Til Later

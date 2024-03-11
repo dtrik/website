@@ -1,0 +1,26 @@
+created: 20191105140846516
+modified: 20191105141226586
+revision: 1
+tags: LeetCode
+title: RangeSumBST
+type: text/vnd.tiddlywiki
+
+Q. Given the root node of a binary search tree, return the sum of values of all nodes with value between L and R (inclusive).
+
+The binary search tree is guaranteed to have unique values.
+
+A. The intuition here is in the definition of a BST. For a BST, at each node, the left subtree will be less than the node while the right subtree will be greater. So here at each node, we can prune away parts of our computation depending on the node's value.
+
+```
+def rangeSumBST(root: TreeNode, L: int, R: int) -> int:
+        if root:
+            if root.val < L:
+                return rangeSumBST(root.right, L, R)
+            elif root.val > R:
+                return rangeSumBST(root.left, L, R)
+            else:
+                return (root.val + rangeSumBST(root.left, L, R) +
+                            rangeSumBST(root.right, L, R))
+        else:
+            return 0
+```

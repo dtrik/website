@@ -1,8 +1,8 @@
 name: Build TiddlyWiki Static Pages
 on:
   push:
-    paths:
-      - index.html
+    branches:
+      - main
 
 jobs:
   build:
@@ -13,35 +13,25 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 20
+          node-version: 14
       - name: Install TiddlyWiki
         run: npm install -g tiddlywiki
       - name: Deleting existing files
-        run: rm -rf ./homepage ./output ./static
+        run: rm -rf ./homepage ./output ./static ./feed
       - name: Copy existing TW5 to new install
         run: tiddlywiki --load ./index.html --savewikifolder ./homepage
       - name: Build tiddlers
-        run: tiddlywiki ./homepage --rendertiddlers '[!is[system]]' $:/core/templates/static.tiddler.html static text/plain
+        run: tiddlywiki ./homepage --rendertiddlers '[tag[short]]' $:/core/templates/static.tiddler.html static text/plain
       - name: Build template
-        run: tiddlywiki ./homepage --rendertiddler $:/core/templates/static.template.html static.html text/plain
+        run: tiddlywiki ./homepage --rendertiddler $:/core/templates/static.template.html short.html text/plain
       - name: Build css
         run: tiddlywiki ./homepage --rendertiddler $:/core/templates/static.template.css static/static.css text/plain        
+      - name: View files
+        run: tree ./
       - name: Move output to proper directory
-        run: mv ./homepage/output ./static_out
-      - name: Setup Git Config
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "damunano.1989@gmail.com"
-      - name: Add Remote Repository
-        run: |
-          git remote add static https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/dtrik/static.git
-      - name: Copy File
-        run: |
-          cp -r ./static_out ./static
-      - name: Commit and Push Changes
-        run: |
-          cd static
-          git add .
-          git commit -m "Copy file from original repository"
-          git push origin main
-
+        run: mv ./homepage/output ./feed
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update static pages
+          file_pattern: ./feed/*

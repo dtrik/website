@@ -16,12 +16,15 @@ jobs:
           node-version: 14
       - name: Install TiddlyWiki
         run: npm install -g tiddlywiki
-      - name: Build static pages of shorts
+      - name: Build tiddlers
         run: tiddlywiki ./ --rendertiddlers '[tag[short]]' $:/core/templates/static.tiddler.html static text/plain
-      - name: Show created files
+      - name: Build template
+        run: tiddlywiki ./ --rendertiddler $:/core/templates/static.template.html static.html text/plain
+      - name: Build css
+        run: tiddlywiki ./ --rendertiddler $:/core/templates/static.template.css static/static.css text/plain        - name: Show created files
         run: tree ./
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update static pages
-          file_pattern: ./output/*.html
+          file_pattern: ./output/static*

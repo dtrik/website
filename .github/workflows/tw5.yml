@@ -1,8 +1,8 @@
 name: Build TiddlyWiki Static Pages
 on:
   push:
-    branches:
-      - main
+    paths:
+      - index.html
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 20
       - name: Install TiddlyWiki
         run: npm install -g tiddlywiki
       - name: Deleting existing files
@@ -26,12 +26,22 @@ jobs:
         run: tiddlywiki ./homepage --rendertiddler $:/core/templates/static.template.html static.html text/plain
       - name: Build css
         run: tiddlywiki ./homepage --rendertiddler $:/core/templates/static.template.css static/static.css text/plain        
-      - name: View files
-        run: tree ./
       - name: Move output to proper directory
-        run: mv ./homepage/output ./static
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Update static pages
-          file_pattern: ./static/*
+        run: mv ./homepage/output ./static_out
+      - name: Setup Git Config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "damunano.1989@gmail.com"
+      - name: Add Remote Repository
+        run: |
+          git remote add static https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/dtrik/static.git
+      - name: Copy File
+        run: |
+          cp -r ./static_out ./static
+      - name: Commit and Push Changes
+        run: |
+          cd static
+          git add .
+          git commit -m "Copy file from original repository"
+          git push origin main
+

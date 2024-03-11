@@ -26,4 +26,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update static pages
-          file_pattern: ./output/*.html
+          file_pattern: ./output/static/*.html

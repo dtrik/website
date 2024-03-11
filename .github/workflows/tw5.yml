@@ -16,16 +16,18 @@ jobs:
           node-version: 14
       - name: Install TiddlyWiki
         run: npm install -g tiddlywiki
+      - name: Copy existing TW5 to new install
+        run: tiddlywiki --load ./index.html --savewikifolder ./homepage
       - name: Build tiddlers
-        run: tiddlywiki ./ --rendertiddlers '[!is[system]]' $:/core/templates/static.tiddler.html static text/plain
+        run: tiddlywiki ./homepage --rendertiddlers '[!is[system]]' $:/core/templates/static.tiddler.html static text/plain
       - name: Build template
-        run: tiddlywiki ./ --rendertiddler $:/core/templates/static.template.html static.html text/plain
+        run: tiddlywiki ./homepage --rendertiddler $:/core/templates/static.template.html static.html text/plain
       - name: Build css
-        run: tiddlywiki ./ --rendertiddler $:/core/templates/static.template.css static/static.css text/plain        
+        run: tiddlywiki ./homepage --rendertiddler $:/core/templates/static.template.css static/static.css text/plain        
       - name: View files
         run: tree ./
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update static pages
-          file_pattern: ./output/static*
+          file_pattern: ./homepage/output/static*

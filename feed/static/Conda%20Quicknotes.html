@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.3.3" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>Conda Quicknotes: Intrepid Internet Itinerant — Who Am I Kidding</title>
+</head>
+<body class="tc-body">
+<div class="tc-sidebar-scrollable" style="overflow: auto;">
+<div class="tc-sidebar-header"><h1 class="tc-site-title">Intrepid Internet Itinerant</h1></div>
+<div class="tc-site-subtitle">Who Am I Kidding</div>
+</div>
+
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="Conda Quicknotes" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="new journal here" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fnew-journal-here" title="Create a new journal tiddler tagged with this one"></button><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">Conda Quicknotes</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class="tc-reveal"></div><div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="dtrik.html">dtrik</a> 22nd April 2023 at 8:33am</div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"></div></div><div class="tc-tiddler-body tc-reveal"><p>This is a short post with a few Conda commands and notes. I am adding my most frequently using commands. Use carefully, YMMV. I am sourcing these from the Conda Docs1. It is mainly intended as a quick reference for myself.
+Basics and Introduction:</p><p>Conda is a package and environment manager primarily for Python. For our current context, it helps in installing packages while resolving their dependencies. Conda also helps in creating environments which I think of as isolated boxes with their own set of versions of packages (and even python).</p><p>We can switch across environments without worrying if installing a new package will create conflicts. For eg, a new package C might need version x.x of package B while an already existing package A needs version x.y. Without environments, this could lead to dependency issues.</p><p>This environment information is also useful when we share our issues/packages etc where we can specify exactly which version of each package is required to either reproduce our problem or to install and work properly on our package.</p><p>Conda requires an Anaconda (or Miniconda) installation. Once it is installed on Windows, all the conda commands are accessible from the Anaconda Prompt which can be invoked from the Start Menu.</p><p>To verify that conda is available, check:</p><pre><code>conda --version</code></pre><p>To update to lastest version of conda:</p><pre><code>conda update conda</code></pre><p>Most used commands</p><p>To create a new environment:</p><pre><code>conda create --name myenv</code></pre><p>This creates an environment with the same python version as the Anaconda installation. To create an environment with a different version of python (say 3.5):</p><pre><code>conda create --name myenv python=3.5</code></pre><p>These create environments with a default set of packages. To create an environment of python 3.5 and installing a particular package of required version:</p><pre><code>conda create --name myenv package_name=version python=3.5</code></pre><p>It is recommended to install all the packages required in an environment in one go. To activate the created environment:</p><pre><code>conda activate myenv</code></pre><p>To go back to base environment:</p><pre><code>conda activate</code></pre><p>To install a package using conda:</p><p>Search for the package</p><pre><code>    conda search package_name</code></pre><p>Install the package</p><pre><code>    conda install package_name</code></pre><p>Verify it is installed</p><pre><code>    conda list</code></pre><p>We can also use pip along with conda. To use pip in the environment, first install pip:</p><pre><code>conda install -n myenv pip</code></pre><p>Conda and pip can have conflicts. So install as much as possible using conda. Other recommendations can be seen from here</p><p>To remove an environment:</p><pre><code>conda remove --name myenv --all</code></pre><p>These are the basic commands that I think should be most useful. If I find more commands, I will update this post.</p><p>'Til Later</p><p>References: </p><ol><li><a class="tc-tiddlylink-external" href="https://docs.conda.io/en/latest/" rel="noopener noreferrer" target="_blank">Conda Docs</a></li><li><a class="tc-tiddlylink-external" href="https://tdhopper.commy-python-environment-workflow-with-conda/" rel="noopener noreferrer" target="_blank">Tim Hopper's Blog</a></li></ol></div>
+</div></p>
+</section>
+</body>
+</html>
+

@@ -21,7 +21,7 @@ jobs:
       - name: Copy existing TW5 to new install
         run: tiddlywiki --load ./index.html --savewikifolder ./homepage
       - name: Build tiddlers
-        run: tiddlywiki ./homepage --rendertiddlers '[tag[short]]' $:/core/templates/static.tiddler.html static text/plain
+        run: tiddlywiki ./homepage --rendertiddlers '[!is[system]]' $:/core/templates/static.tiddler.html static text/plain
       - name: Build template
         run: tiddlywiki ./homepage --rendertiddler $:/core/templates/static.template.html short.html text/plain
       - name: Build css
